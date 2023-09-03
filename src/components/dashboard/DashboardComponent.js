@@ -26,7 +26,7 @@ function DashboardComponent() {
             category
         }
 
-        await Axios.post(`https://book-app-api-jyd4.onrender.com//user/create-book/${userData.userId}`, bookObj)
+        await Axios.post(`https://book-app-api-uuu2.onrender.com/user/create-book/${userData.userId}`, bookObj)
             .then(async (res) => {
                 toast.success(res.data.message)
                 setIsBookCreated(true)
@@ -42,7 +42,7 @@ function DashboardComponent() {
     }
 
     async function getAllBooks(){
-        await Axios.get(`https://book-app-api-jyd4.onrender.com//user/all-books/${userData.userId}`)
+        await Axios.get(`https://book-app-api-uuu2.onrender.com/user/all-books/${userData.userId}`)
             .then((res) => {
                 console.log(res.data.data)
                 //alert('hello')

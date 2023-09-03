@@ -16,7 +16,7 @@ function BookCard({ props }) {
     const handleDelete = () => {
         const deleteRes = window.confirm('Do you really want to delete this?')
         if (deleteRes === true) {
-            Axios.delete(`https://book-app-api-jyd4.onrender.com//user/delete-book/${props._id}`)
+            Axios.delete(`https://book-app-api-uuu2.onrender.com/user/delete-book/${props._id}`)
                 .then((res) => {
                     //alert(res.data.message)
                     toast.success(res.data.message)
@@ -43,7 +43,7 @@ function BookCard({ props }) {
             category: category,
             userId: props.userId
         }
-        Axios.put(`https://book-app-api-jyd4.onrender.com//user/edit-book`, newBook)
+        Axios.put(`https://book-app-api-uuu2.onrender.com/user/edit-book`, newBook)
             .then((res) => {
                 toast.success(res.data.message)
                 setTimeout(() => {
