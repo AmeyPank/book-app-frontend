@@ -56,7 +56,7 @@ const LoginUser = () => {
                 <Form.Control
                     type='password'
                     required
-                    placeholder='******'
+                    placeholder='Enter your password'
                     value={userDetails.password}
                     onChange={(e) => { setUserDetails({ ...userDetails, password: e.target.value }) }}
                 />
