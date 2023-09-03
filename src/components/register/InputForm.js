@@ -23,7 +23,7 @@ const InputForm = () => {
             password
         }
 
-        await axios.post(`https://book-app-api-d5k9.onrender.com/user/registration`, userDetails)
+        await axios.post(`https://book-app-api-jyd4.onrender.com//user/registration`, userDetails)
             .then((res) => {
                 toast.success(res.data.message)
                 setTimeout(() => {
