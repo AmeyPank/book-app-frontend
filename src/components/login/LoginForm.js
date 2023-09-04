@@ -20,7 +20,7 @@ const LoginUser = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Axios.post(`${process.env.REACT_SERVER_URL}/user/login`, userDetails)
+        await Axios.post('https://book-app-api-uuu2.onrender.com/user/login', userDetails)
             .then((res) => {
                 toast.success(res.data.message)
                 localStorage.setItem('users', JSON.stringify(res.data.data))
@@ -42,7 +42,7 @@ const LoginUser = () => {
         <Form className='signup-form' onSubmit={handleSubmit}>
             <h2 className='m-5'>Login into your Book App</h2>
             <Form.Group className='mb-3 col-form-label' controlId='name'>
-                <Form.Label>Login Through email</Form.Label>
+                <Form.Label>Login through email</Form.Label>
                 <Form.Control
                     type='email'
                     required

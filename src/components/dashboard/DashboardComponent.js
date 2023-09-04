@@ -26,7 +26,7 @@ function DashboardComponent() {
             category
         }
 
-        await Axios.post(`${process.env.REACT_SERVER_URL}/user/create-book/${userData.userId}`, bookObj)
+        await Axios.post(`https://book-app-api-uuu2.onrender.com/user/create-book/${userData.userId}`, bookObj)
             .then(async (res) => {
                 toast.success(res.data.message)
                 setIsBookCreated(true)
