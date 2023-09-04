@@ -43,7 +43,7 @@ function BookCard({ props }) {
             category: category,
             userId: props.userId
         }
-        Axios.put(`https://book-app-api-uuu2.onrender.com/user/edit-book`, newBook)
+        Axios.put(`${process.env.REACT_SERVER_URL}/user/edit-book`, newBook)
             .then((res) => {
                 toast.success(res.data.message)
                 setTimeout(() => {

@@ -20,7 +20,7 @@ const LoginUser = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Axios.post('https://book-app-api-uuu2.onrender.com/user/login', userDetails)
+        await Axios.post(`${process.env.REACT_SERVER_URL}/user/login`, userDetails)
             .then((res) => {
                 toast.success(res.data.message)
                 localStorage.setItem('users', JSON.stringify(res.data.data))
