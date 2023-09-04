@@ -42,7 +42,7 @@ const LoginUser = () => {
         <Form className='signup-form' onSubmit={handleSubmit}>
             <h2 className='m-5'>Login into your Book App</h2>
             <Form.Group className='mb-3 col-form-label' controlId='name'>
-                <Form.Label>Login through email</Form.Label>
+                <Form.Label>Login Through email</Form.Label>
                 <Form.Control
                     type='email'
                     required
