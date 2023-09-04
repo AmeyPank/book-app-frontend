@@ -42,7 +42,7 @@ function DashboardComponent() {
     }
 
     async function getAllBooks(){
-        await Axios.get(`${process.env.REACT_SERVER_URL}/user/all-books/${userData.userId}`)
+        await Axios.get(`https://book-app-api-uuu2.onrender.com/user/all-books/${userData.userId}`)
             .then((res) => {
                 console.log(res.data.data)
                 //alert('hello')
