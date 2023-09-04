@@ -60,7 +60,7 @@ function BookCard({ props }) {
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>By: {props.author}</Card.Text>
-                <Card.Text>Genre: {props.category}</Card.Text>
+                <Card.Text>Category: {props.category}</Card.Text>
                 <Card.Text>Price: {props.price}</Card.Text>
                 <Button variant='primary' onClick={handleShow} >Update</Button>
                 <Button variant='danger' className='ms-4' onClick={handleDelete}>Delete</Button>

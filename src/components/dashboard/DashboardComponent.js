@@ -28,7 +28,7 @@ function DashboardComponent() {
 
         await Axios.post(`https://book-app-api-uuu2.onrender.com/user/create-book/${userData.userId}`, bookObj)
             .then(async (res) => {
-                toast.success(res.data.message)
+                toast.success("Book created successfully...")
                 setIsBookCreated(true)
                 // setTimeout(() => {
                 //     window.location.reload()
